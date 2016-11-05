@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="JPA_Model_ScientifiquePU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.article_informatique.Model.Administrateur</class>
+    <class>com.article_informatique.Model.Article</class>
+    <class>com.article_informatique.Model.Auteur</class>
+    <class>com.article_informatique.Model.Categorie</class>
+    <class>com.article_informatique.Model.Commentaire</class>
+    <class>com.article_informatique.Model.Compte</class>
+    <class>com.article_informatique.Model.Diplome</class>
+    <class>com.article_informatique.Model.Evaluation</class>
+    <class>com.article_informatique.Model.User</class>
+    <class>com.article_informatique.Model.Viewer</class>
+    <class>com.article_informatique.Model.Soumettre</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/bd_article_scientifique?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="root"/>
+      <property name="eclipselink.cache.shared.default" value="false"/>
+    </properties>
+  </persistence-unit>
+</persistence>
